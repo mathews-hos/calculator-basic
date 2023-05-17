@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-theme="dark">
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+                <form class="form m-3" action="">
+
+                    <button type="button" class="btn-dark btn mb-1" onclick="mostrarnome()">iae</button>
+
+                    <button type="button" class="btn-dark btn mb-1" onclick="console.log(soma(3,2))">soma</button>
+
+                    <button type="button" class="btn-dark btn mb-1"
+                        onclick="console.log(subtracao(3,2))">Subtração</button>
+
+                    <button type="button" class="btn-dark btn mb-1"
+                        onclick="console.log(multiplicacao(3,2))">multiplicação</button>
+
+                    <button type="button" class="btn-dark btn mb-1" onclick="console.log(divisao(4,2))">divisão</button>
+
+                    <button type="button" class="btn-dark btn mb-1"
+                        onclick="alert(arearetangulo(prompt('qual a base do retângulo'), prompt('qual a altura do retângulo')))">área
+                        do retângulo</button>
+
+                    <button type="button" class="btn-dark btn mb-1 btn-"
+                        onclick="alert(areacirculo(prompt('qual o raio do círculo?')))">área
+                        do
+                        círculo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

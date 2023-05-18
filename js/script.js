@@ -27,3 +27,8 @@ function arearetangulo(base, altura) {
 function areacirculo(raio) {
     return 3.1 * (raio * raio)  //pi x raio^2
 }
+
+function functioncalc(codigo) {
+    let calcinput = document.getElementById('caculadorainput');
+    
+}

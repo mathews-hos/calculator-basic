@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-bs-theme="dark">
+<body data-bs-theme="dark" >
     <div class="container ">
-        <div class="row">
-            <div class="col">
-                <form class="form f m-3" action="">
-
-                </form>
+        <form class="form row f m-3" action="">
+            <div class="col-12 text-center">
+                <label for="caculadorainput" class="form-label">CALCULADORA</label>
+                <input onkeydown="return functioncalc(event.charCode)" id="caculadorainput" type="text" class="form-control form-control-lg" placeholder="2+2=4">
             </div>
-        </div>
+            
+
+        </form>
     </div>
 
     <script src="bootstrap/bootstrap.bundle.min.js"></script>

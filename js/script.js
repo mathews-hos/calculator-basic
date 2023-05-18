@@ -29,11 +29,16 @@ function areacirculo(raio) {
 }
 
 function functioncalc(tecla) {
-    console.log('entrou')
+    console.log('entrou', tecla.which)
     let calcinput = document.getElementById('caculadorainput');
-    if (tecla.which >= 96 && tecla.which <=105) {
+    /* if para aceitar apenas numeros, enter, operadores de conta e o ponto */
+    if ((tecla.which >= 96 && tecla.which <= 105) || (tecla.which >= 48 && tecla.which <= 57) || (tecla.which == 8) || tecla.which == 193 || tecla.which == 111) {
+
         console.log('true')
         return true
+    } else {
+
+        return false
     }
 
 }

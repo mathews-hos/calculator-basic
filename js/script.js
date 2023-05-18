@@ -28,7 +28,12 @@ function areacirculo(raio) {
     return 3.1 * (raio * raio)  //pi x raio^2
 }
 
-function functioncalc(codigo) {
+function functioncalc(tecla) {
+    console.log('entrou')
     let calcinput = document.getElementById('caculadorainput');
-    
+    if (tecla.which >= 96 && tecla.which <=105) {
+        console.log('true')
+        return true
+    }
+
 }

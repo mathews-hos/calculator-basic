@@ -28,17 +28,17 @@ function areacirculo(raio) {
     return 3.1 * (raio * raio)  //pi x raio^2
 }
 
-function functioncalc(tecla) {
-    console.log('entrou', tecla.which)
-    let calcinput = document.getElementById('caculadorainput');
-    /* if para aceitar apenas numeros, enter, operadores de conta e o ponto */
-    if ((tecla.which >= 96 && tecla.which <= 105) || (tecla.which >= 48 && tecla.which <= 57) || (tecla.which == 8) || tecla.which == 193 || tecla.which == 111) {
+// a função para delimitar o input do calc
+// function functioncalc(tecla) {
+//     console.log('entrou', tecla.which, tecla)
+//     let calcinput = document.getElementById('caculadorainput');
+//     /* if para aceitar apenas numeros, enter, operadores de conta e o ponto */
+//     if ((tecla.which >= 96 && tecla.which <= 105)|| tecla.which == 46 || (tecla.which >= 48 && tecla.which <= 57) || (tecla.which == 8) || tecla.which == 193 || tecla.which == 111||tecla.ctrlKey == true && !()) {
 
-        console.log('true')
-        return true
-    } else {
+//         console.log('true')
+//     } else {
 
-        return false
-    }
+//         return false
+//     }
 
-}
+// }

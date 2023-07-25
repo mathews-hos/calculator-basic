@@ -1,3 +1,4 @@
+
 function soma(n1, n2) {
     return n1 + n2
 }
@@ -29,16 +30,25 @@ function areacirculo(raio) {
 }
 
 // a função para delimitar o input do calc
-// function functioncalc(tecla) {
-//     console.log('entrou', tecla.which, tecla)
-//     let calcinput = document.getElementById('caculadorainput');
-//     /* if para aceitar apenas numeros, enter, operadores de conta e o ponto */
-//     if ((tecla.which >= 96 && tecla.which <= 105)|| tecla.which == 46 || (tecla.which >= 48 && tecla.which <= 57) || (tecla.which == 8) || tecla.which == 193 || tecla.which == 111||tecla.ctrlKey == true && !()) {
+function functioncalc(event) {
+    let calcinput = document.getElementById('caculadorainput');
+    formula = calcinput.value
+    tecla = event.key
+    itens = { termos: {}, operador: {} }
+    const operadores = "/*-+"
+    const ponto = ".,"
+    // console.log('entrou', tecla, event)
+    /* if para aceitar apenas numeros, enter, operadores de conta e o ponto */
+    if ((parseInt(tecla) >= 0 && parseInt(tecla) <= 9) || operadores.includes(tecla) || ponto.includes(tecla)) {
 
-//         console.log('true')
-//     } else {
+        console.log('sim')
+    } else {
+        console.log("não");
+        return false
+    }
 
-//         return false
-//     }
 
-// }
+}
+function calcular() {
+    console.log("foi")
+}

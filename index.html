@@ -13,18 +13,21 @@
 
 <body data-bs-theme="dark">
     <div class="container ">
-        <form class="form row f m-3 " action="">
+        <div class="row py-5">
             <div class="col-12 text-center">
                 <label for="caculadorainput" class="form-label">CALCULADORA</label>
                 <div class="input-group">
-                    <input autofocus onkeydown="return functioncalc(event)" id="caculadorainput" type="text"
-                        class="form-control form-control-lg" placeholder="2+2=4">
-                    <button class="btn btn-dark">assa</button>
+                    <input autofocus onkeypress="return functioncalc(event)" id="caculadorainput" type="text"
+                        onkeydown="console.log('a');" class="form-control form-control-lg" placeholder="2+2=4">
+                    <button class="btn btn-secondary">assa</button>
                 </div>
             </div>
-
-
-        </form>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input readonly class="form-control" name="resultado" id="resultado">
+            </div>
+        </div>
     </div>
 
     <script src="bootstrap/bootstrap.bundle.min.js"></script>

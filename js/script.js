@@ -64,7 +64,6 @@ function calcular(event) {
         isComposing: false,
         composed: true,
         code: "Digit3"
-        key
     })
     calcinput.dispatchEvent(a)
     console.log(a);

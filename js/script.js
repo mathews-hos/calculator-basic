@@ -31,7 +31,8 @@ function areacirculo(raio) {
 
 // a função para delimitar o input do calc
 function functioncalc(event) {
-    let calcinput = document.getElementById('caculadorainput');
+    console.log(event);
+    let calcinput = event.srcElement;
     formula = calcinput.value
     tecla = event.key
     itens = { termos: {}, operador: {} }
@@ -49,6 +50,25 @@ function functioncalc(event) {
 
 
 }
-function calcular() {
+function calcular(event) {
+    console.log(event);
+    const calcinput = document.getElementById("caculadorainput");
+    a = new KeyboardEvent("keypress", {
+        key: "3",
+        target: calcinput,
+        ctrlKey: false,
+        altKey: false,
+        shiftKey: false,
+        value: "3",
+        repeat: false,
+        isComposing: false,
+        composed: true,
+        code: "Digit3"
+        key
+    })
+    calcinput.dispatchEvent(a)
+    console.log(a);
     console.log("foi")
+    calcinput.focus()
+
 }

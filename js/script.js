@@ -53,18 +53,6 @@ function functioncalc(event) {
 function calcular(event) {
     console.log(event);
     const calcinput = document.getElementById("caculadorainput");
-    a = new KeyboardEvent("keypress", {
-        key: "3",
-        target: calcinput,
-        ctrlKey: false,
-        altKey: false,
-        shiftKey: false,
-        value: "3",
-        repeat: false,
-        isComposing: false,
-        composed: true,
-        code: "Digit3"
-    })
     calcinput.dispatchEvent(a)
     console.log(a);
     console.log("foi")
